@@ -1,0 +1,98 @@
+[workspace]
+authors = ["lorenzo <lorenzo.cerrone@uzh.ch>"]
+channels = ["conda-forge"]
+name = "bia_setup"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+
+# Base Python dependencies
+[feature.py13.dependencies]
+python = "==3.13"
+
+[feature.py11.dependencies]
+python = "==3.11"
+
+# Scientific Python stack
+[feature.bia-sci-py-stack.dependencies]
+numpy = "*"
+scipy = "*"
+pandas = "*"
+scikit-learn = "*"
+scikit-image = "*"
+tifffile = "*"
+zarr = "*"
+dask = "*"
+matplotlib = "*"
+seaborn = "*"
+jupyterlab = "*"
+
+[feature.bia-sci-py-stack.tasks]
+jupyterlab = "jupyter lab"
+
+# Napari with some plugins
+[feature.napari_base.dependencies]
+pyqt = ">=5.15.11,<6"
+
+[feature.napari_base.pypi-dependencies]
+napari = ">=0.6.6, <0.7"
+
+[feature.napari_base.tasks]
+napari = "napari"
+
+# Napari OME Zarr and related plugins
+[feature.napari_ome_zarr.pypi-dependencies]
+napari-ome-zarr-navigator = ">=0.2.4, <0.3"
+napari-ome-zarr = ">=0.6.1, <0.7"
+napari-feature-classifier = ">=0.3.2, <0.4"
+napari-feature-visualization = ">=0.0.2, <0.0.3"
+
+[feature.napari_ome_zarr.tasks]
+napari-ome-zarr = "napari"
+
+# Feature Explorer
+[feature.feature-explorer.pypi-dependencies]
+fractal-feature-explorer = ">=0.1.14, <0.2"
+
+[feature.feature-explorer.tasks]
+explorer = "explorer"
+
+# Ngio Environment
+[feature.ngio.pypi-dependencies]
+ngio = "*"
+napari = "*"
+
+# Cellpose Environment
+[feature.cellpose.pypi-dependencies]
+cellpose = { version = "*", extras = ["gui"] }
+
+[feature.cellpose.tasks]
+cellpose = "python -m cellpose"
+cellpose-3D = "python -m cellpose --Zstack"
+
+# Ilastik Environment
+[feature.ilastik]
+channels = ["conda-forge", "ilastik-forge"]
+
+[feature.ilastik.dependencies]
+ilastik = "*"
+
+[feature.ilastik.tasks]
+ilastik = "ilastik"
+
+# Plant Seg
+[feature.plant-seg.dependencies]
+plant-seg = "*"
+
+[feature.plant-seg.tasks]
+plantseg = "plantseg"
+plantseg-napari = "plantseg --napari"
+
+[environments]
+bia-sci-py-stack = ["py13", "bia-sci-py-stack"]
+cellpose = ["py13", "cellpose"]
+napari-ome-zarr = ["py13", "napari_base", "napari_ome_zarr"]
+ilastik = ["py11", "ilastik"]
+plant-seg = ["py13", "plant-seg"]
+ngio = ["py13", "ngio", "bia-sci-py-stack"]
+feature-explorer = ["py13", "feature-explorer"]
