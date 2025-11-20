@@ -41,11 +41,15 @@ napari = ">=0.6.6, <0.7"
 napari = "napari"
 
 # Napari OME Zarr and related plugins
+[feature.napari_ome_zarr.dependencies]
+ffmpeg = "*"
+
 [feature.napari_ome_zarr.pypi-dependencies]
 napari-ome-zarr-navigator = ">=0.2.4, <0.3"
 napari-ome-zarr = ">=0.6.1, <0.7"
 napari-feature-classifier = ">=0.3.2, <0.4"
 napari-feature-visualization = ">=0.0.2, <0.0.3"
+napari-animation = "*"
 
 [feature.napari_ome_zarr.tasks]
 napari-ome-zarr = "napari"

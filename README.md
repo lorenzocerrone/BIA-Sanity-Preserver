@@ -52,6 +52,12 @@ An environment with `napari`, and all necessary dependencies for OME-Zarr suppor
     ```bash
     pixi run napari
     ```
+***plugins included***:
+* napari-ome-zarr-navigator
+* napari-ome-zarr
+* napari-feature-classifier
+* napari-feature-visualization
+* napari-animation
 
 ### **Cellpose**
 An environment with `cellpose` for 2D and 3D cell segmentation.
