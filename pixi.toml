@@ -89,6 +89,7 @@ plantseg = "plantseg"
 plantseg-napari = "plantseg --napari"
 
 [environments]
+default = ["py13"]
 bia-sci-py-stack = ["py13", "bia-sci-py-stack"]
 cellpose = ["py13", "cellpose"]
 napari-ome-zarr = ["py13", "napari_base", "napari_ome_zarr"]
