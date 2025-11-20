@@ -24,7 +24,7 @@ All you need is:
 2. This repository cloned:
 
 ```bash
-git clone TODO
+git clone https://github.com/lorenzocerrone/BIA-Sanity-Preserver
 ```
 
 That’s it. You’re officially on the path to BIA enlightenment.
@@ -38,7 +38,7 @@ Run your tools with a single command and zero emotional damage:
 An environment with all the essentials for bio image analysis in Python, including
 `numpy`, `scipy`, `pandas`, `scikit-image`, `matplotlib`, `seaborn`, `jupyterlab`, `scikit-learn`, `dask`, `zarr`, `tiff-file`, and more.
 
-**environment**: `bia-sci-py-stack`
+**environment**: `bia-sci-py-stack`  
 **task**:
 * Start a notebook with:
     ```bash
@@ -46,7 +46,7 @@ An environment with all the essentials for bio image analysis in Python, includi
     ```
 ### **Napari** with OME-Zarr support
 An environment with `napari`, and all necessary dependencies for OME-Zarr support, included.
-**environment**: `napari-ome-zarr`
+**environment**: `napari-ome-zarr`  
 **task**:
 * Start Napari with:
     ```bash
@@ -56,7 +56,7 @@ An environment with `napari`, and all necessary dependencies for OME-Zarr suppor
 ### **Cellpose**
 An environment with `cellpose` for 2D and 3D cell segmentation.
 
-**environment**: `cellpose`
+**environment**: `cellpose`  
 **tasks**:
 *  Cellpose 2D Gui
     ```bash
@@ -70,7 +70,7 @@ An environment with `cellpose` for 2D and 3D cell segmentation.
 ### **Ilastik**
 An environment with `ilastik` for interactive machine learning-based image classification and segmentation.
 
-**environment**: `ilastik`
+**environment**: `ilastik`  
 **task**:
 * Start Ilastik GUI:
     ```bash
@@ -80,7 +80,7 @@ An environment with `ilastik` for interactive machine learning-based image class
 ### **PlantSeg**
 `PlantSeg` is a deep learning-based tool for cell segmentation in plant tissues.
 
-**environment**: `plantseg`
+**environment**: `plantseg`  
 **tasks**:
 * Start PlantSeg GUI
     ```bash
@@ -95,7 +95,7 @@ An environment with `ilastik` for interactive machine learning-based image class
 `feature-explorer` a python dashboard for exploring OME-Zarr images and with 
 tabular data (e.g. outputs from the Fractal Image Analysis platform).
 
-**environment**: `feature-explorer`
+**environment**: `feature-explorer`  
 **task**:
 * Start Feature Explorer Dashboard:
     ```bash
