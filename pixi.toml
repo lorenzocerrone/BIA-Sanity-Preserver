@@ -2,7 +2,7 @@
 authors = ["lorenzo <lorenzo.cerrone@uzh.ch>"]
 channels = ["conda-forge"]
 name = "bia_setup"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64", "win-64"]
 version = "0.1.0"
 
 
