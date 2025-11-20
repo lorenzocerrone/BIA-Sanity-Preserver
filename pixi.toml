@@ -92,6 +92,14 @@ plant-seg = "*"
 plantseg = "plantseg"
 plantseg-napari = "plantseg --napari"
 
+# StarDist Napari Plugin
+[feature.stardist-napari.pypi-dependencies]
+stardist = "*"
+stardist-napari = "*"
+
+[feature.stardist-napari.tasks]
+stardist-napari = "napari"
+
 [environments]
 default = ["py13"]
 bia-sci-py-stack = ["py13", "bia-sci-py-stack"]
@@ -101,3 +109,4 @@ ilastik = ["py11", "ilastik"]
 plant-seg = ["py13", "plant-seg"]
 ngio = ["py13", "ngio", "bia-sci-py-stack"]
 feature-explorer = ["py13", "feature-explorer"]
+stardist-napari = ["py13", "stardist-napari", "napari_base"]
