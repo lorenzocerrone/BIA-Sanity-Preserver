@@ -115,7 +115,6 @@ tabular data (e.g. outputs from the Fractal Image Analysis platform).
 * **QuPath**
 
 
-
 ## 🤝 Contributing
 
 Any contributions are welcome! Here’s how you can help:
@@ -123,3 +122,7 @@ Any contributions are welcome! Here’s how you can help:
 * If something's not working, **open an issue** 🐛
 * If you have ideas for new tools or improvements, **open an issue** 💡
 * If you want to add a tool or improve an existing setup, **submit a pull request** 🚀
+
+# 🧪 Testing
+
+Each environment is automatically installed on Ubuntu, macOS, and Windows using GitHub Actions to ensure cross-platform compatibility. The tools themselves are not tested beyond installation.
