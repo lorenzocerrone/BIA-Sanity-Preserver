@@ -38,12 +38,12 @@ jobs:
           # Check if the version is a stable release
           # Meaning that starts with "v" and contains only numbers and dots
           if [[ $GITHUB_REF == refs/tags/* ]] && [[ $VERSION =~ ^v[0-9.]+$ ]]; then
-            mike deploy --push --update-aliases $VERSION stable
-            mike set-default --push stable
+            pixi run -e docs mike deploy --push --update-aliases $VERSION stable
+            pixi run -e docs mike set-default --push stable
             echo "Deployed stable version $VERSION (stable)"
 
           elif [[ $GITHUB_REF == refs/heads/dev ]]; then
-            mike deploy --push dev
-            mike set-default --push dev
+            pixi run -e docs mike deploy --push dev
+            pixi run -e docs mike set-default --push dev
             echo "Deployed development version (dev)"
           fi
