@@ -3,7 +3,6 @@ name: Build Docs
 on:
   push:
     branches:
-      - dev
       - main
     tags:
       - "v*"
@@ -42,8 +41,8 @@ jobs:
             pixi run -e docs mike set-default --push stable
             echo "Deployed stable version $VERSION (stable)"
 
-          elif [[ $GITHUB_REF == refs/heads/dev ]]; then
+          elif [[ $GITHUB_REF == refs/heads/main ]]; then
             pixi run -e docs mike deploy --push dev
             pixi run -e docs mike set-default --push dev
-            echo "Deployed development version (dev)"
+            echo "Deployed development version (dev) - main branch"
           fi
