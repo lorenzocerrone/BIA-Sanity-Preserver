@@ -71,3 +71,4 @@ Such a project can only thrive with the help of the community, to make sure that
 ## 🧪 Testing
 
 Each environment is automatically installed on Ubuntu, macOS, and Windows using GitHub Actions to ensure cross-platform compatibility. The tools themselves are not tested beyond installation.
+
