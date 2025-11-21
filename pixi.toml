@@ -13,6 +13,11 @@ python = "==3.13"
 [feature.py11.dependencies]
 python = "==3.11"
 
+# Documentation dependencies
+[feature.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+
 # Scientific Python stack
 [feature.bia-sci-py-stack.dependencies]
 numpy = "*"
@@ -94,6 +99,7 @@ plantseg-napari = "plantseg --napari"
 
 [environments]
 default = ["py13"]
+docs = ["py13", "docs"]
 bia-sci-py-stack = ["py13", "bia-sci-py-stack"]
 cellpose = ["py13", "cellpose"]
 napari-ome-zarr = ["py13", "napari_base", "napari_ome_zarr"]

@@ -1,0 +1,35 @@
+site_name: BIA Sanity P
+
+theme:
+  name: material
+  favicon: images/favicon.ico
+  #logo: logos/logo_white.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      # primary: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      # primary: teal
+      # accent: light-green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Tools:
+    - Cellpose: tools/cellpose.md
+    - Napari (OME-Zarr): tools/napari-ome-zarr.md
+    - ilastik: tools/ilastik.md
+    - Plant-seg: tools/plant-seg.md
+    - Feature-explorer: tools/feature-explorer.md
+  - Environments:
+    - Python Scientific Stack: envs/python-scientific-stack.md
+    - Ngio: envs/ngio.md
