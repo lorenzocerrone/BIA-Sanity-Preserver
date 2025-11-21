@@ -17,6 +17,7 @@ python = "==3.11"
 [feature.docs.dependencies]
 mkdocs = "*"
 mkdocs-material = "*"
+mike = "*"
 
 # Scientific Python stack
 [feature.bia-sci-py-stack.dependencies]
@@ -34,6 +35,11 @@ jupyterlab = "*"
 
 [feature.bia-sci-py-stack.tasks]
 jupyterlab = "jupyter lab"
+
+# Ngio Environment
+[feature.ngio.pypi-dependencies]
+ngio = "*"
+napari = "*"
 
 # Napari with some plugins
 [feature.napari_base.dependencies]
@@ -66,11 +72,6 @@ fractal-feature-explorer = ">=0.1.14, <0.2"
 [feature.feature-explorer.tasks]
 explorer = "explorer"
 
-# Ngio Environment
-[feature.ngio.pypi-dependencies]
-ngio = "*"
-napari = "*"
-
 # Cellpose Environment
 [feature.cellpose.pypi-dependencies]
 cellpose = { version = "*", extras = ["gui"] }
@@ -97,13 +98,19 @@ plant-seg = "*"
 plantseg = "plantseg"
 plantseg-napari = "plantseg --napari"
 
+# Environment definitions
 [environments]
+# Dev environments
 default = ["py13"]
 docs = ["py13", "docs"]
+
+# envs
 bia-sci-py-stack = ["py13", "bia-sci-py-stack"]
+ngio = ["py13", "ngio", "bia-sci-py-stack"]
+
+# tools
 cellpose = ["py13", "cellpose"]
 napari-ome-zarr = ["py13", "napari_base", "napari_ome_zarr"]
 ilastik = ["py11", "ilastik"]
 plant-seg = ["py13", "plant-seg"]
-ngio = ["py13", "ngio", "bia-sci-py-stack"]
 feature-explorer = ["py13", "feature-explorer"]

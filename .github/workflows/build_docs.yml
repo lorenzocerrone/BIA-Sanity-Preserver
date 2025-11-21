@@ -1,0 +1,49 @@
+name: Build Docs
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+    tags:
+      - "v*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy Docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: prefix-dev/setup-pixi@v0.9.3
+        with:
+          pixi-version: v0.59.0
+          cache: true
+      - run: pixi install -e docs
+
+      - name: Configure Git user
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Deploy docs
+        run: |
+          VERSION=$(echo $GITHUB_REF | sed 's/refs\/tags\///' | sed 's/refs\/heads\///')
+          echo "Deploying version $VERSION"
+          # Check if the version is a stable release
+          # Meaning that starts with "v" and contains only numbers and dots
+          if [[ $GITHUB_REF == refs/tags/* ]] && [[ $VERSION =~ ^v[0-9.]+$ ]]; then
+            mike deploy --push --update-aliases $VERSION stable
+            mike set-default --push stable
+            echo "Deployed stable version $VERSION (stable)"
+
+          elif [[ $GITHUB_REF == refs/heads/dev ]]; then
+            mike deploy --push dev
+            mike set-default --push dev
+            echo "Deployed development version (dev)"
+          fi
