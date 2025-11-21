@@ -33,6 +33,7 @@ jobs:
           pixi-version: v0.59.0
           cache: true
       # - run: pixi install --all
+      - run: pixi lock
 
   deploy:
     name: Deploy
