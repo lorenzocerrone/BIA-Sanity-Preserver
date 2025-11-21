@@ -32,7 +32,7 @@ jobs:
         with:
           pixi-version: v0.59.0
           cache: true
-      - run: pixi install --all
+      # - run: pixi install --all
 
   deploy:
     name: Deploy
