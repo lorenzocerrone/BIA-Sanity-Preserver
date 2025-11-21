@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#napari-with-ome-zarr-support" class="md-skip">
+        <a href="#napari-ome-zarr" class="md-skip">
           Skip to content
         </a>
       
@@ -452,17 +452,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -498,61 +487,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plugins-included" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugins Included
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Cases
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -831,17 +765,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -877,61 +800,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plugins-included" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugins Included
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Cases
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1003,55 +871,18 @@
   
 
 
-<h1 id="napari-with-ome-zarr-support">Napari with OME-Zarr Support</h1>
-<p>Napari is a fast, interactive, multi-dimensional image viewer for Python, enhanced here with full OME-Zarr support for handling large, multi-dimensional datasets.</p>
-<h2 id="overview">Overview</h2>
-<p>This environment provides napari with all necessary dependencies for OME-Zarr support, making it ideal for viewing and analyzing large-scale bio image datasets stored in the OME-Zarr format.</p>
+<h1 id="napari-ome-zarr">Napari (OME-Zarr)</h1>
+<p>Napari is a fast, interactive, multi-dimensional image viewer for Python with OME-Zarr support for handling large datasets. Learn more about Napari at <a href="https://napari.org/">napari.org</a>.</p>
 <h2 id="environment">Environment</h2>
-<p><strong>Environment</strong>: <code>napari-ome-zarr</code></p>
+<p>Napari with OME-Zarr support is available in the <code>napari-ome-zarr</code> environment.</p>
+<p>To activate the environment, pre-fix your commands with:</p>
+<pre><code class="language-bash">pixi run -e napari-ome-zarr YOUR_COMMAND
+</code></pre>
 <h2 id="available-tasks">Available Tasks</h2>
 <h3 id="start-napari">Start Napari</h3>
 <p>Launch the napari viewer with OME-Zarr support:</p>
 <pre><code class="language-bash">pixi run napari
 </code></pre>
-<h2 id="plugins-included">Plugins Included</h2>
-<ul>
-<li><strong>napari-ome-zarr-navigator</strong>: Navigate through OME-Zarr datasets efficiently</li>
-<li><strong>napari-ome-zarr</strong>: Core OME-Zarr support for napari</li>
-<li><strong>napari-feature-classifier</strong>: Classify features in your images</li>
-<li><strong>napari-feature-visualization</strong>: Visualize extracted features</li>
-<li><strong>napari-animation</strong>: Create animations from your multi-dimensional data</li>
-</ul>
-<h2 id="features">Features</h2>
-<ul>
-<li><strong>Multi-dimensional viewing</strong>: Handle 2D, 3D, and higher-dimensional datasets</li>
-<li><strong>OME-Zarr native support</strong>: Seamlessly open and navigate OME-Zarr files</li>
-<li><strong>Interactive visualization</strong>: Real-time exploration of large datasets</li>
-<li><strong>Plugin ecosystem</strong>: Extended functionality through the included plugins</li>
-<li><strong>Layer-based approach</strong>: Organize different data types in separate layers</li>
-<li><strong>Annotation tools</strong>: Built-in tools for manual annotation and measurement</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<ol>
-<li>Make sure you have pixi installed and this repository cloned</li>
-<li>Navigate to the repository directory</li>
-<li>Run <code>pixi run napari</code> to start the napari viewer</li>
-<li>Open your OME-Zarr datasets and start exploring!</li>
-</ol>
-<h2 id="use-cases">Use Cases</h2>
-<ul>
-<li><strong>Large dataset visualization</strong>: View multi-terabyte OME-Zarr datasets efficiently</li>
-<li><strong>Multi-channel analysis</strong>: Analyze multi-channel fluorescence images</li>
-<li><strong>Time-series data</strong>: Navigate through time-lapse datasets</li>
-<li><strong>3D visualization</strong>: Explore volumetric data with interactive 3D rendering</li>
-<li><strong>Feature analysis</strong>: Use the feature plugins for quantitative analysis</li>
-</ul>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://napari.org/">Napari documentation</a></li>
-<li><a href="https://ngff.openmicroscopy.org/latest/">OME-Zarr specification</a></li>
-<li><a href="https://napari.org/stable/tutorials/index.html">Napari tutorials</a></li>
-</ul>
 
 
 

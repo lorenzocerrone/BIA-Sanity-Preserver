@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plantseg" class="md-skip">
+        <a href="#plant-seg" class="md-skip">
           Skip to content
         </a>
       
@@ -508,17 +508,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -554,83 +543,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-plant-tissues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Supported Plant Tissues
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Workflow Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Input Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Cases
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -853,17 +765,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -899,83 +800,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-plant-tissues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Supported Plant Tissues
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Workflow Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Input Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Cases
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1047,72 +871,18 @@
   
 
 
-<h1 id="plantseg">PlantSeg</h1>
-<p>PlantSeg is a deep learning-based tool specifically designed for cell segmentation in plant tissues, addressing the unique challenges of plant cell structure and morphology.</p>
-<h2 id="overview">Overview</h2>
-<p>PlantSeg combines deep learning-based boundary prediction with graph partitioning algorithms to achieve accurate cell segmentation in complex 3D plant tissues.</p>
+<h1 id="plant-seg">Plant-seg</h1>
+<p>PlantSeg is a deep learning-based tool for cell segmentation in plant tissues. Learn more about PlantSeg at <a href="https://github.com/PlantSeg/PlantSeg">PlantSeg repository</a>.</p>
 <h2 id="environment">Environment</h2>
-<p><strong>Environment</strong>: <code>plantseg</code></p>
+<p>PlantSeg is available in the <code>plantseg</code> environment.</p>
+<p>To activate the environment, pre-fix your commands with:</p>
+<pre><code class="language-bash">pixi run -e plantseg YOUR_COMMAND
+</code></pre>
 <h2 id="available-tasks">Available Tasks</h2>
 <h3 id="start-plantseg-gui">Start PlantSeg GUI</h3>
 <p>Launch the PlantSeg graphical user interface:</p>
 <pre><code class="language-bash">pixi run plantseg-gui
 </code></pre>
-<h2 id="features">Features</h2>
-<ul>
-<li><strong>Deep learning segmentation</strong>: State-of-the-art neural networks trained on plant tissues</li>
-<li><strong>3D cell segmentation</strong>: Specialized for volumetric plant imaging data</li>
-<li><strong>Pre-trained models</strong>: Multiple models trained on different plant tissues and organs</li>
-<li><strong>Graph partitioning</strong>: Advanced algorithms for separating touching cells</li>
-<li><strong>Batch processing</strong>: Process multiple datasets efficiently</li>
-<li><strong>Custom training</strong>: Ability to train models on your own plant data</li>
-<li><strong>Multi-scale analysis</strong>: Handle images at different resolutions</li>
-</ul>
-<h2 id="supported-plant-tissues">Supported Plant Tissues</h2>
-<ul>
-<li><strong>Root tissues</strong>: Specialized models for root cell segmentation</li>
-<li><strong>Leaf tissues</strong>: Models optimized for leaf cellular structure</li>
-<li><strong>Shoot apical meristems</strong>: Segmentation of meristematic tissues</li>
-<li><strong>Ovules</strong>: Specialized for reproductive tissue analysis</li>
-<li><strong>General plant tissues</strong>: Multi-purpose models for various plant organs</li>
-</ul>
-<h2 id="workflow-steps">Workflow Steps</h2>
-<ol>
-<li><strong>Image preprocessing</strong>: Prepare your 3D microscopy data</li>
-<li><strong>Boundary prediction</strong>: Use neural networks to predict cell boundaries</li>
-<li><strong>Segmentation</strong>: Apply graph partitioning to separate individual cells</li>
-<li><strong>Post-processing</strong>: Refine segmentation results</li>
-<li><strong>Analysis</strong>: Extract quantitative measurements from segmented cells</li>
-</ol>
-<h2 id="getting-started">Getting Started</h2>
-<ol>
-<li>Make sure you have pixi installed and this repository cloned</li>
-<li>Navigate to the repository directory</li>
-<li>Run <code>pixi run plantseg-gui</code> to start the PlantSeg interface</li>
-<li>Load your 3D plant imaging data and select appropriate models</li>
-<li>Run the segmentation pipeline and analyze your results!</li>
-</ol>
-<h2 id="input-requirements">Input Requirements</h2>
-<ul>
-<li><strong>3D image stacks</strong>: Confocal or light-sheet microscopy data</li>
-<li><strong>Supported formats</strong>: TIFF, H5, various microscopy formats</li>
-<li><strong>Cell wall staining</strong>: Images with clear cell boundary visualization</li>
-<li><strong>Resolution</strong>: Isotropic or near-isotropic voxel spacing recommended</li>
-</ul>
-<h2 id="use-cases">Use Cases</h2>
-<ul>
-<li><strong>Developmental biology</strong>: Track cell divisions and growth in developing organs</li>
-<li><strong>Cell morphometry</strong>: Quantify cell shape, size, and volume</li>
-<li><strong>Tissue architecture</strong>: Analyze 3D tissue organization and structure</li>
-<li><strong>Comparative studies</strong>: Compare cellular organization across different conditions</li>
-<li><strong>Growth analysis</strong>: Study cell expansion and tissue growth patterns</li>
-</ul>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://plantseg.readthedocs.io/">PlantSeg documentation</a></li>
-<li><a href="https://elifesciences.org/articles/57613">PlantSeg paper</a></li>
-<li><a href="https://github.com/PlantSeg/PlantSeg">PlantSeg GitHub repository</a></li>
-</ul>
 
 
 

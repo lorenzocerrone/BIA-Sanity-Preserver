@@ -424,17 +424,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -481,39 +470,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -820,17 +776,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#environment" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -877,39 +822,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
   
 </li>
       
@@ -982,11 +894,12 @@
 
 
 <h1 id="cellpose">Cellpose</h1>
-<p>Cellpose is a generalist algorithm for cellular segmentation that works well on diverse cell types and images without the need for model retraining or parameter adjustment.</p>
-<h2 id="overview">Overview</h2>
-<p>The Cellpose environment provides tools for 2D and 3D cell segmentation using deep learning models trained on a diverse dataset of cell images.</p>
+<p>Cellpose is a generalist tool for cellular segmentation using deep learning. Lern more about Cellpose at <a href="https://github.com/MouseLand/cellpose">Cellpose repository</a>.</p>
 <h2 id="environment">Environment</h2>
-<p><strong>Environment</strong>: <code>cellpose</code></p>
+<p>Cellpose is available in the <code>cellpose</code> environment.</p>
+<p>To activate the environment, pre-fix your commands with:</p>
+<pre><code class="language-bash">pixi run -e cellpose YOUR_COMMAND
+</code></pre>
 <h2 id="available-tasks">Available Tasks</h2>
 <h3 id="cellpose-2d-gui">Cellpose 2D GUI</h3>
 <p>Start the Cellpose graphical interface for 2D segmentation:</p>
@@ -996,26 +909,6 @@
 <p>Start the Cellpose graphical interface for 3D segmentation:</p>
 <pre><code class="language-bash">pixi run cellpose-3D
 </code></pre>
-<h2 id="features">Features</h2>
-<ul>
-<li><strong>2D and 3D segmentation</strong>: Supports both 2D and 3D cell segmentation</li>
-<li><strong>Pre-trained models</strong>: Includes several pre-trained models for different cell types</li>
-<li><strong>Custom training</strong>: Ability to train custom models on your own data</li>
-<li><strong>GPU acceleration</strong>: Supports GPU acceleration for faster processing</li>
-<li><strong>User-friendly GUI</strong>: Easy-to-use graphical interface for interactive segmentation</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<ol>
-<li>Make sure you have pixi installed and this repository cloned</li>
-<li>Navigate to the repository directory</li>
-<li>Run one of the available tasks above to start Cellpose</li>
-<li>Load your images and start segmenting!</li>
-</ol>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://cellpose.readthedocs.io/">Cellpose official documentation</a></li>
-<li><a href="https://www.nature.com/articles/s41592-020-01018-x">Cellpose paper</a></li>
-</ul>
 
 
 
