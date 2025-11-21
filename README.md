@@ -34,18 +34,17 @@ That’s it. You’re officially on the path to BIA enlightenment.
 
 Run your tools with a single command and zero emotional damage:
 
-* [Cellpose](tools/cellpose.md)
-* [Napari with OME-Zarr support](tools/napari-ome-zarr.md)
-* [ilastik](tools/ilastik.md)
-* [Plant-seg](tools/plant-seg.md)
-* [Feature-explorer](tools/feature-explorer.md)
-
+* [Cellpose](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/cellpose/)
+* [Napari with OME-Zarr support](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/napari-ome-zarr/)
+* [ilastik](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/ilastik/)
+* [Plant-seg](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/plant-seg/)
+* [Feature-explorer](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/feature-explorer/)
 ## 🏗️ Environments
 
 Ready-to-use environments for bio image analysis:
 
-* [Python Scientific Stack](envs/python-scientific-stack.md)
-* [Ngio](envs/ngio.md)
+* [Python Scientific Stack](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/envs/python-scientific-stack/)
+* [Ngio](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/envs/ngio/)
 
 ## 🌠 Wish List
 
