@@ -1,4 +1,9 @@
 site_name: BIA Sanity Preserver
+site_url: https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/
+site_description: "Because setting up bio image analysis tools shouldn't cost you your sanity."
+repo_name: BIA Sanity Preserver
+repo_url: https://github.com/BioVisionCenter/BIA-Sanity-Preserver
+copyright: "Copyright &copy; 2025-, BioVisionCenter UZH"
 
 theme:
   name: material
@@ -21,6 +26,30 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  features:
+    - content.tooltips
+    - content.tabs.link
+    - content.code.annotate
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+    #- toc.integrate
+    - toc.follow
+    - search.suggest
+    - search.share
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/BioVisionCenter/BIA-Sanity-Preserver"
+
+plugins: 
+  - search      
 
 nav:
   - Home: index.md
@@ -33,3 +62,4 @@ nav:
   - Environments:
     - Python Scientific Stack: envs/python-scientific-stack.md
     - Ngio: envs/ngio.md
+  - Contributing: contributing.md
