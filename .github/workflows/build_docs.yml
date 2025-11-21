@@ -34,6 +34,7 @@ jobs:
         run: |
           VERSION=$(echo $GITHUB_REF | sed 's/refs\/tags\///' | sed 's/refs\/heads\///')
           echo "Deploying version $VERSION"
+          git pull
           # Check if the version is a stable release
           # Meaning that starts with "v" and contains only numbers and dots
           if [[ $GITHUB_REF == refs/tags/* ]] && [[ $VERSION =~ ^v[0-9.]+$ ]]; then
