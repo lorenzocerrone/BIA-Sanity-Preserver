@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/contributing/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/envs/ngio/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/envs/python-scientific-stack/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/cellpose/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
+    </url>
+    <url>
+         <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/convpaint/</loc>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/feature-explorer/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/ilastik/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/napari-ome-zarr/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
     <url>
          <loc>https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/dev/tools/plant-seg/</loc>
-         <lastmod>2025-11-21</lastmod>
+         <lastmod>2025-12-11</lastmod>
     </url>
 </urlset>
