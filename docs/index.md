@@ -38,6 +38,7 @@ Run your tools with a single command and zero emotional damage:
 * [Napari with OME-Zarr support](tools/napari-ome-zarr.md)
 * [ilastik](tools/ilastik.md)
 * [Plant-seg](tools/plant-seg.md)
+* [Convpaint](tools/convpaint.md)
 * [Feature-explorer](tools/feature-explorer.md)
 
 ## 🏗️ Environments

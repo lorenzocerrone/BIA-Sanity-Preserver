@@ -102,6 +102,9 @@ plantseg-napari = "plantseg --napari"
 [feature.convpaint.pypi-dependencies]
 napari-convpaint = "*"
 
+[feature.convpaint.tasks]
+convpaint = "napari"
+
 # Environment definitions
 [environments]
 # Dev environments
