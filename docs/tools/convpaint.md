@@ -1,6 +1,6 @@
 # Convpaint
 
-Convpaint is a napari plugin for interactive image segmentation using convolutional neural networks. It allows users to perform semantic segmentation with sparse annotations. Learn more about Convpaint at [Convpaint repository]()
+Convpaint is a napari plugin for interactive image segmentation using convolutional neural networks. It allows users to perform semantic segmentation with sparse annotations. Learn more about Convpaint at [Convpaint Documentation](https://guiwitz.github.io/napari-convpaint/book/Landing.html)
 
 ## Environment
 
