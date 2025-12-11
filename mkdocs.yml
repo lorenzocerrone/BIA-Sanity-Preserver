@@ -58,6 +58,7 @@ nav:
     - Napari (OME-Zarr): tools/napari-ome-zarr.md
     - ilastik: tools/ilastik.md
     - Plant-seg: tools/plant-seg.md
+    - Convpaint: tools/convpaint.md
     - Feature-explorer: tools/feature-explorer.md
   - Environments:
     - Python Scientific Stack: envs/python-scientific-stack.md
