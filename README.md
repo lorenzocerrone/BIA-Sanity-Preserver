@@ -38,7 +38,9 @@ Run your tools with a single command and zero emotional damage:
 * [Napari with OME-Zarr support](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/napari-ome-zarr/)
 * [ilastik](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/ilastik/)
 * [Plant-seg](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/plant-seg/)
+* [Convpaint](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/convpaint/)
 * [Feature-explorer](https://biovisioncenter.github.io/BIA-Sanity-Preserver/stable/tools/feature-explorer/)
+  
 ## 🏗️ Environments
 
 Ready-to-use environments for bio image analysis:
