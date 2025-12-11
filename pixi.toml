@@ -27,8 +27,7 @@ pandas = "*"
 scikit-learn = "*"
 scikit-image = "*"
 tifffile = "*"
-zarr = "*"
-dask = "*"
+#sdask = "*"
 matplotlib = "*"
 seaborn = "*"
 jupyterlab = "*"
@@ -38,7 +37,8 @@ jupyterlab = "jupyter lab"
 
 # Ngio Environment
 [feature.ngio.pypi-dependencies]
-ngio = "*"
+ngio = "==0.4.6"
+zarr = "<3"
 napari = "*"
 
 # Napari with some plugins
@@ -98,6 +98,13 @@ plant-seg = "*"
 plantseg = "plantseg"
 plantseg-napari = "plantseg --napari"
 
+# Conv Paint
+[feature.convpaint.pypi-dependencies]
+napari-convpaint = "*"
+
+[feature.convpaint.tasks]
+convpaint = "napari"
+
 # Environment definitions
 [environments]
 # Dev environments
@@ -114,3 +121,4 @@ napari-ome-zarr = ["py13", "napari_base", "napari_ome_zarr"]
 ilastik = ["py11", "ilastik"]
 plant-seg = ["py13", "plant-seg"]
 feature-explorer = ["py13", "feature-explorer"]
+convpaint = ["py13", "napari_base", "convpaint"]
